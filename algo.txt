@@ -1,0 +1,36 @@
+QMenu ()
+
+fonction QMenu ()
+    print : "Quizz B1 !  (BY TEAM ILZIKOUT)"
+    attendre : 1s
+    print : "Quel quiz voulez-vous faire ?"
+    attendre : 1s
+    print : "1. Cybersécurité"
+    print : "2. IA/Data"
+    print : "3. Informatique"
+    ChoixJeu  = input : str("À quel quiz voulez-vous jouer ?")
+    si ChoixJeu == 1
+        Cyber()
+    finsi
+    si ChoixJeu == 2
+        IaData()
+    finsi
+    si ChoixJeu == 3
+        Info()
+    finsi
+    autre si 
+        QMenu()
+fin fonction QMenu
+
+# questions
+
+CyberQ1 = "Quel type d’attaque consiste à submerger un serveur de requêtes pour le rendre indisponible ?"
+CyberR1 = "DDoS"
+
+CyberR2 = "Quel est le rôle d’un pare-feu (firewall) ?"
+Cyber
+
+fonction Cyber()
+    
+
+

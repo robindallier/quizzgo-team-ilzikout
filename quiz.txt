@@ -1,0 +1,125 @@
+Thème 1 : Développement Full Stack (5 questions)
+
+**Q1.** Dans une architecture MVC, à quoi correspond le **modèle (Model)** ?  
+A) À la logique métier et aux données  
+B) À l’interface utilisateur  
+C) À la gestion des requêtes HTTP  
+D) À la configuration du serveur  
+
+**Q2.** Quelle technologie est **côté client** dans une application full stack classique ?  
+A) Node.js  
+B) MySQL  
+C) JavaScript (dans le navigateur)  
+D) Express.js  
+
+**Q3.** Quel est le rôle principal de **Git** dans le développement ?  
+A) Héberger une base de données  
+B) Gérer le versionnement du code  
+C) Exécuter du code JavaScript côté serveur  
+D) Styliser une page web  
+
+**Q4.** Dans une requête HTTP, quelle méthode est utilisée pour **récupérer des données** sans les modifier ?  
+A) POST  
+B) PUT  
+C) GET  
+D) DELETE  
+
+**Q5.** Quel format est le plus couramment utilisé pour échanger des données entre un serveur et un client ?  
+A) XML  
+B) CSV  
+C) JSON  
+D) YAML  
+
+---
+
+### **Thème 2 : Cybersécurité (5 questions)**
+
+**Q6.** Quel type d’attaque consiste à submerger un serveur de requêtes pour le rendre indisponible ?  
+A) Phishing  
+B) SQL Injection  
+C) DDoS  
+D) Man-in-the-Middle  
+
+**Q7.** Quel est le rôle d’un **pare-feu (firewall)** ?  
+A) Chiffrer les données  
+B) Filtrer le trafic réseau selon des règles  
+C) Stocker les mots de passe  
+D) Scanner les virus dans les e-mails  
+
+**Q8.** Quel principe de sécurité recommande d’accorder **le minimum de privilèges nécessaires** ?  
+A) Défense en profondeur  
+B) Principe du moindre privilège  
+C) Authentification forte  
+D) Chiffrement de bout en bout  
+
+**Q9.** Quel protocole sécurise les communications web en chiffrant les données entre le client et le serveur ?  
+A) HTTP  
+B) FTP  
+C) HTTPS  
+D) SMTP  
+
+**Q10.** Quel type d’attaque vise à **tromper l’utilisateur** pour qu’il révèle ses identifiants ?  
+A) Cross-Site Scripting (XSS)  
+B) Brute Force  
+C) Phishing  
+D) Buffer Overflow  
+
+---
+
+### **Thème 3 : IA & Data (5 questions)**
+
+**Q11.** Dans un problème de **classification**, quel est l’objectif principal ?  
+A) Prédire une valeur numérique  
+B) Regrouper des données similaires  
+C) Assigner une étiquette à une donnée  
+D) Réduire la dimension des données  
+
+**Q12.** Quelle bibliothèque Python est la plus utilisée pour le **machine learning** ?  
+A) Pandas  
+B) NumPy  
+C) Scikit-learn  
+D) Matplotlib  
+
+**Q13.** Quel type de données est le plus adapté pour entraîner un modèle de **réseau de neurones** ?  
+A) Données textuelles non structurées  
+B) Données numériques normalisées  
+C) Données catégorielles brutes  
+D) Données manquantes non traitées  
+
+**Q14.** Qu’est-ce que le **surapprentissage (overfitting)** ?  
+A) Le modèle est trop simple et ne capture pas les patterns  
+B) Le modèle apprend le bruit des données d’entraînement  
+C) Le modèle généralise mal sur de nouvelles données  
+D) Le modèle est trop lent à s’entraîner  
+
+**Q15.** Quelle étape est **essentielle avant d’entraîner un modèle** ?  
+A) Visualiser les résultats  
+B) Nettoyer et prétraiter les données  
+C) Déployer le modèle en production  
+D) Choisir une couleur pour les graphiques  
+
+---
+
+### **Réponses correctes :**
+
+| Question | Réponse |
+|----------|---------|
+| Q1       | A       |
+| Q2       | C       |
+| Q3       | B       |
+| Q4       | C       |
+| Q5       | C       |
+| Q6       | C       |
+| Q7       | B       |
+| Q8       | B       |
+| Q9       | C       |
+| Q10      | C       |
+| Q11      | C       |
+| Q12      | C       |
+| Q13      | B       |
+| Q14      | B       |
+| Q15      | B       |
+
+---
+
+Ce QCM est adapté à un niveau Bachelor 1 : concepts fondamentaux, sans calculs complexes ni outils avancés.
