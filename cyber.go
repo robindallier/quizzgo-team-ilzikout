@@ -1,18 +1,103 @@
 package quiz
 
-const (
-	CyberQ1 = "Quel type d’attaque consiste à submerger un serveur de requêtes pour le rendre indisponible ?"
-	CyberR1 = "DDoS"
+import "fmt"
 
-	CyberQ2 = "Quel est le rôle d’un pare-feu (firewall) ?"  
-	CyberR2 = "Filtrer le trafic réseau selon des règles"
+func Cyber() {
+	CyberPoints := 0
+	fmt.Println("Quel type d'attaque consiste à submerger un serveur de requêtes pour le rendre indisponible ?")
+	fmt.Println("A) Phishing")
+	fmt.Println("B) SQL Injection")
+	fmt.Println("C) DDOS")
+	fmt.Println("D) Man-in-the-Middle")
 
-	CyberQ3 = ""
-	CyberR3 = ""
+	var r0 string
+	fmt.Print("Votre réponse: ")
+	fmt.Scanln(&r0)
 
-	CyberQ4 = ""
-	CyberR4 = ""
+	if r0 == "C"{
+		fmt.Print("Bonne réponse !")
+		CyberPoints+=1
+	}else{
+		fmt.Println("Mauvaise réponse")
+	}
 
-	CyberQ5 = ""
-	CyberR5 = ""
-)
+	fmt.Println("Quel est le rôle d'un pare-feu (firewall) ?")
+	fmt.Println("A) Chiffrer les données")
+	fmt.Println("B) Filtrer le trafic réseau selon des règles")
+	fmt.Println("C) Stocker les mots de passe")
+	fmt.Println("D) Scanner les virus dans les e-mails")
+
+	var r1 string
+	fmt.Print("Votre réponse: ")
+	fmt.Scanln(&r1)
+
+	if r1 == "B"{
+		fmt.Print("Bonne réponse !")
+		CyberPoints+=1
+	}else{
+		fmt.Println("Mauvaise réponse")
+	}
+
+
+	fmt.Println("Quel principe de sécurité recommande d'accorder le minimum de privilèges nécessaires ?")
+	fmt.Println("A) Défense en profondeur")
+	fmt.Println("B) Principe du moindre privilège")
+	fmt.Println("C) Authentification forte")
+	fmt.Println("D) Chiffrement de bout en bout")
+
+	var r2 string
+	fmt.Print("Votre réponse: ")
+	fmt.Scanln(&r2)
+
+	if r2 == "B"{
+		fmt.Print("Bonne réponse !")
+		CyberPoints+=1
+	}else{
+		fmt.Println("Mauvaise réponse")
+	}
+
+
+	fmt.Println("Quel protocole sécurise les communications web en chiffrant les données entre le client et le serveur ?")
+	fmt.Println("A) HTTP")
+	fmt.Println("B) FTP")
+	fmt.Println("C) HTTPS")
+	fmt.Println("D) SMTP")
+
+	var r3 string
+	fmt.Print("Votre réponse: ")
+	fmt.Scanln(&r3)
+
+	if r3 == "C"{
+		fmt.Print("Bonne réponse !")
+		CyberPoints+=1
+	}else{
+		fmt.Println("Mauvaise réponse")
+	}
+
+
+	fmt.Println("Quel type d’attaque vise à tromper l’utilisateur pour qu’il révèle ses identifiants ?")
+	fmt.Println("A) Cross-Site Scripting (XSS)")
+	fmt.Println("B) Brute Force")
+	fmt.Println("C) Phishing")
+	fmt.Println("D) Buffer Overflow")
+
+	var r4 string
+	fmt.Print("Votre réponse: ")
+	fmt.Scanln(&r4)
+
+	if r4 == "C"{
+		fmt.Print("Bonne réponse !")
+		CyberPoints+=1
+	}else{
+		fmt.Println("Mauvaise réponse")
+	}
+
+
+	_ = r0
+	_ = r1
+	_ = r2
+	_ = r3
+	_ = r4
+
+	fmt.Print("Vous avez scoré ", CyberPoints, "/5")
+}
