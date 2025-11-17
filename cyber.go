@@ -16,11 +16,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r0)
 
-	if r0 == "C" {
+	switch r0 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		CyberPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel est le rôle d'un pare-feu (firewall) ?")
@@ -33,11 +36,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r1)
 
-	if r1 == "B" {
+	switch r1 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		CyberPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel principe de sécurité recommande d'accorder le minimum de privilèges nécessaires ?")
@@ -50,11 +56,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r2)
 
-	if r2 == "B" {
+	switch r2 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		CyberPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel protocole sécurise les communications web en chiffrant les données entre le client et le serveur ?")
@@ -67,11 +76,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r3)
 
-	if r3 == "C" {
+	switch r3 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		CyberPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel type d'attaque vise à tromper l'utilisateur pour qu'il révèle ses identifiants ?")
@@ -84,11 +96,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r4)
 
-	if r4 == "C" {
+	switch r4 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		CyberPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	_ = r0

@@ -14,11 +14,14 @@ func Info() {
 	var a0 string
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a0)
-	if a0 == "A" {
+	switch a0 {
+	case "A", "a":
 		fmt.Println("Bonne réponse !")
 		InfoPoints += 1
-	} else {
+	case "B", "b", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quelle technologie est côté client dans une application full stack classique ?")
@@ -30,11 +33,14 @@ func Info() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a1)
 
-	if a1 == "C" {
+	switch a1 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		InfoPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel est le rôle principal de Git dans le développement ?")
@@ -46,11 +52,14 @@ func Info() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a2)
 
-	if a2 == "B" {
+	switch a2 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		InfoPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Dans une requête HTTP, quelle méthode est utilisée pour récupérer des données sans les modifier ?")
@@ -62,11 +71,14 @@ func Info() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a3)
 
-	if a3 == "C" {
+	switch a3 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		InfoPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel format est le plus couramment utilisé pour échanger des données entre un serveur et un client ?")
@@ -78,11 +90,14 @@ func Info() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a4)
 
-	if a4 == "C" {
+	switch a4 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		InfoPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	_ = a0

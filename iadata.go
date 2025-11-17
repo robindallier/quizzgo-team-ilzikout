@@ -17,11 +17,14 @@ func IAData() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&b0)
 
-	if b0 == "C" {
+	switch b0 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		IADataPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quelle bibliothèque Python est la plus utilisée pour le machine learning ?")
@@ -33,11 +36,14 @@ func IAData() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&b1)
 
-	if b1 == "C" {
+	switch b1 {
+	case "C", "c":
 		fmt.Println("Bonne réponse !")
 		IADataPoints += 1
-	} else {
+	case "A", "a", "B", "b", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quel type de données est le plus adapté pour entraîner un modèle de réseau de neurones ?")
@@ -49,11 +55,14 @@ func IAData() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&b2)
 
-	if b2 == "B" {
+	switch b2 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		IADataPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Qu’est-ce que le surapprentissage (overfitting) ?")
@@ -65,11 +74,14 @@ func IAData() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&b3)
 
-	if b3 == "B" {
+	switch b3 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		IADataPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	fmt.Println("Quelle étape est essentielle avant d’entraîner un modèle ?")
@@ -81,11 +93,14 @@ func IAData() {
 	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&b4)
 
-	if b4 == "B" {
+	switch b4 {
+	case "B", "b":
 		fmt.Println("Bonne réponse !")
 		IADataPoints += 1
-	} else {
+	case "A", "a", "C", "c", "D", "d":
 		fmt.Println("Mauvaise réponse")
+	default:
+		fmt.Println("Réponse incorrecte, veuillez entrer A, B, C ou D.")
 	}
 
 	_ = b0
