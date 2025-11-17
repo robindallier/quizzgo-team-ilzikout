@@ -2,8 +2,10 @@ package quiz
 
 import "fmt"
 
+var CyberPoints int
+
 func Cyber() {
-	CyberPoints := 0
+	CyberPoints = 0
 	fmt.Println("Quel type d'attaque consiste à submerger un serveur de requêtes pour le rendre indisponible ?")
 	fmt.Println("A) Phishing")
 	fmt.Println("B) SQL Injection")
@@ -14,10 +16,10 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r0)
 
-	if r0 == "C"{
-		fmt.Print("Bonne réponse !")
-		CyberPoints+=1
-	}else{
+	if r0 == "C" {
+		fmt.Println("Bonne réponse !")
+		CyberPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
@@ -31,13 +33,12 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r1)
 
-	if r1 == "B"{
-		fmt.Print("Bonne réponse !")
-		CyberPoints+=1
-	}else{
+	if r1 == "B" {
+		fmt.Println("Bonne réponse !")
+		CyberPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
-
 
 	fmt.Println("Quel principe de sécurité recommande d'accorder le minimum de privilèges nécessaires ?")
 	fmt.Println("A) Défense en profondeur")
@@ -49,13 +50,12 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r2)
 
-	if r2 == "B"{
-		fmt.Print("Bonne réponse !")
-		CyberPoints+=1
-	}else{
+	if r2 == "B" {
+		fmt.Println("Bonne réponse !")
+		CyberPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
-
 
 	fmt.Println("Quel protocole sécurise les communications web en chiffrant les données entre le client et le serveur ?")
 	fmt.Println("A) HTTP")
@@ -67,15 +67,14 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r3)
 
-	if r3 == "C"{
-		fmt.Print("Bonne réponse !")
-		CyberPoints+=1
-	}else{
+	if r3 == "C" {
+		fmt.Println("Bonne réponse !")
+		CyberPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
-
-	fmt.Println("Quel type d’attaque vise à tromper l’utilisateur pour qu’il révèle ses identifiants ?")
+	fmt.Println("Quel type d'attaque vise à tromper l'utilisateur pour qu'il révèle ses identifiants ?")
 	fmt.Println("A) Cross-Site Scripting (XSS)")
 	fmt.Println("B) Brute Force")
 	fmt.Println("C) Phishing")
@@ -85,13 +84,12 @@ func Cyber() {
 	fmt.Print("Votre réponse: ")
 	fmt.Scanln(&r4)
 
-	if r4 == "C"{
-		fmt.Print("Bonne réponse !")
-		CyberPoints+=1
-	}else{
+	if r4 == "C" {
+		fmt.Println("Bonne réponse !")
+		CyberPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
-
 
 	_ = r0
 	_ = r1
@@ -99,5 +97,6 @@ func Cyber() {
 	_ = r3
 	_ = r4
 
-	fmt.Print("Vous avez scoré ", CyberPoints, "/5")
+	fmt.Println("Vous avez scoré ", CyberPoints, "/5")
+	choix_quiz()
 }

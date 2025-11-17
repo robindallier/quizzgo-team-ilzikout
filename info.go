@@ -2,24 +2,24 @@ package quiz
 
 import "fmt"
 
+var InfoPoints int
 
 func Info() {
-	InfoPoints := 0
+	InfoPoints = 0
 	fmt.Println("Dans une architecture MVC, à quoi correspond le modèle (Model) ?")
 	fmt.Println("A) À la logique métier et aux données")
 	fmt.Println("B) À l’interface utilisateur")
 	fmt.Println("C) À la gestion des requêtes HTTP")
 	fmt.Println("D) À la configuration du serveur")
 	var a0 string
-	fmt.Print("Votre réponse: ")
+	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a0)
-	if a0 == "A"{
-		fmt.Print("Bonne réponse !")
-		InfoPoints+=1
-	}else{
+	if a0 == "A" {
+		fmt.Println("Bonne réponse !")
+		InfoPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
-
 
 	fmt.Println("Quelle technologie est côté client dans une application full stack classique ?")
 	fmt.Println("A) Node.js")
@@ -27,13 +27,13 @@ func Info() {
 	fmt.Println("C) JavaScript (dans le navigateur)")
 	fmt.Println("D) Express.js")
 	var a1 string
-	fmt.Print("Votre réponse: ")
+	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a1)
 
-	if a1 == "C"{
-		fmt.Print("Bonne réponse !")
-		InfoPoints+=1
-	}else{
+	if a1 == "C" {
+		fmt.Println("Bonne réponse !")
+		InfoPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
@@ -43,13 +43,13 @@ func Info() {
 	fmt.Println("C) Exécuter du code JavaScript côté serveur")
 	fmt.Println("D) Styliser une page web")
 	var a2 string
-	fmt.Print("Votre réponse: ")
+	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a2)
 
-	if a2 == "B"{
-		fmt.Print("Bonne réponse !")
-		InfoPoints+=1
-	}else{
+	if a2 == "B" {
+		fmt.Println("Bonne réponse !")
+		InfoPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
@@ -59,13 +59,13 @@ func Info() {
 	fmt.Println("C) GET")
 	fmt.Println("D) DELETE")
 	var a3 string
-	fmt.Print("Votre réponse: ")
+	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a3)
 
-	if a3 == "C"{
-		fmt.Print("Bonne réponse !")
-		InfoPoints+=1
-	}else{
+	if a3 == "C" {
+		fmt.Println("Bonne réponse !")
+		InfoPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
@@ -75,13 +75,13 @@ func Info() {
 	fmt.Println("C) JSON")
 	fmt.Println("D) YAML")
 	var a4 string
-	fmt.Print("Votre réponse: ")
+	fmt.Println("Votre réponse: ")
 	fmt.Scanln(&a4)
 
-	if a4 == "C"{
-		fmt.Print("Bonne réponse !")
-		InfoPoints+=1
-	}else{
+	if a4 == "C" {
+		fmt.Println("Bonne réponse !")
+		InfoPoints += 1
+	} else {
 		fmt.Println("Mauvaise réponse")
 	}
 
@@ -91,5 +91,6 @@ func Info() {
 	_ = a3
 	_ = a4
 
-	fmt.Print("Vous avez scoré ", InfoPoints, "/5")
+	fmt.Println("Vous avez scoré ", InfoPoints, "/5")
+	choix_quiz()
 }
